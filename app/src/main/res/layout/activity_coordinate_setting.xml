@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Copyright 2022 Google LLC
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.ar.core.examples.java.geospatial.GeospatialActivity">
+
+    <!-- Aの入力欄 -->
+    <EditText
+        android:id="@+id/editTextA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="緯度の入力"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Bの入力欄 -->
+    <EditText
+        android:id="@+id/editTextB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="経度の入力"
+        android:layout_below="@id/editTextA"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Cの入力欄 -->
+    <EditText
+        android:id="@+id/editTextC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="高度の入力"
+        android:layout_below="@id/editTextB"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- ボタン -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="確定"
+        android:layout_below="@id/editTextC"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+</RelativeLayout>
